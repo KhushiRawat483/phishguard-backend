@@ -19,9 +19,9 @@ app.add_middleware(
 # ── Load Models ───────────────────────────────────────────────
 print("Loading models...")
 
-url_model   = tf.keras.models.load_model('saved_models/url_ann_model.h5')
-email_model = tf.keras.models.load_model('saved_models/email_cnn_model.h5')
-ceas_model  = tf.keras.models.load_model('saved_models/ceas_cnn_model.h5')
+url_model   = tf.keras.models.load_model('saved_models/url_ann_model.keras')
+email_model = tf.keras.models.load_model('saved_models/email_cnn_model.keras')
+ceas_model  = tf.keras.models.load_model('saved_models/ceas_cnn_model.keras')
 
 scaler        = pickle.load(open('saved_models/url_scaler.pkl',        'rb'))
 selector      = pickle.load(open('saved_models/url_selector.pkl',      'rb'))
